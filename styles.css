@@ -397,7 +397,8 @@ img {
   margin: 0 auto;
 }
 
-/* ------------------- */
+
+
 
 #about {
   background-color: var(--blue);
@@ -444,7 +445,9 @@ img {
   width: 90px;
   height: 90px;
 }
-/* ------------------- */
+
+
+
 
 #contact {
   width: 90%;
