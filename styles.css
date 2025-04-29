@@ -1,4 +1,4 @@
-/*Brittany Arguello*/
+
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -116,6 +116,10 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+
+/*Brittany Arguello*/
+
 
 :root{
     --yellow: #F6D64A;
