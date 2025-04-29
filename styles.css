@@ -1,0 +1,1167 @@
+/*Brittany Arguello*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+    --yellow: #F6D64A;
+    --teal: #55BCD5;
+    --purple: #9B26B0;
+    --blue: #499BD2;
+    --dark-gray: #222222;
+    --light-gray: #EAEAEA;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+@import url(https://fonts.google.com/share?selection.family=Molle:ital@1%7CMontserrat);
+
+#skip {
+  position: absolute;
+  right: -9999999px;
+  top: auto;
+}
+
+#skip:focus {
+  position: static;
+}
+
+body {
+  overflow-x: hidden;
+  list-style: none;
+  background-color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  color: var(--black);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  font-size: 50px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Molle", cursive;
+}
+
+p,
+h4,
+small,
+button,
+nav,
+q,
+form {
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+h4 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+header {
+  background-image: linear-gradient(to bottom, var(--teal), var(--white));
+  text-align: left;
+}
+
+header h1 {
+  font-size: 45px;
+}
+
+header p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#menu-toggle input {
+  display: none;
+}
+
+nav {
+  margin-bottom: 10px;
+}
+
+header {
+  text-align: left;
+  background-image: linear-gradient(to bottom, var(--teal), var(--white));
+}
+
+#intro p {
+  text-align: left;
+  margin-bottom: 10px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#logo {
+  display: inline-block;
+}
+
+#intro h2 {
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+header p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#intro img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+#menu-toggle label {
+  display: block;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 7px 10px;
+  background-color: var(--yellow);
+}
+
+#menu-toggle ul {
+  display: none;
+  color: var(--black);
+  list-style-type: none;
+  background-color: var(--teal);
+}
+
+#menu-toggle li a {
+  display: block;
+  font-size: 10px;
+  padding: 10px 10px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+#menu-toggle input:checked + label {
+    background-color: var(--dark-gray);
+    color: var(--white);
+  }
+
+  #menu-toggle input:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--teal);
+    width: 100vw;
+    gap: 5px;
+    padding: 10px 0;
+  }
+
+  #menu-toggle ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  #menu-toggle ul li a {
+    display: block;
+    padding: 15px 0;
+    color: var(--black);
+    background-color: var(--teal);
+    border-top: 1px solid var(--white);
+  }
+
+h4 {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+#intro picture {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 45px;
+}
+
+img {
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+
+#plan {
+  background-color: var(--yellow);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+}
+
+#plan h3 {
+  text-align: left;
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 35px;
+}
+
+#plan div section h4 {
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#plan div section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  background-color: var(--teal);
+  border: 2px solid var(--white);
+}
+
+#plan div section img {
+  height: 90%;
+  width: 90%;
+}
+
+
+
+
+#testimonials h3 {
+  margin-top: 25px;
+  margin-left: 25px;
+  text-align: left;
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+
+#testimonials section {
+  text-align: center;
+  margin: 25px;
+}
+
+#testimonials h4 {
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+#testimonials q {
+  font-style: italic;
+}
+
+#testimonials img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* ------------------- */
+
+#about {
+  background-color: var(--blue);
+}
+
+#about h3 {
+  text-align: left;
+  padding: 25px;
+}
+
+#about section {
+  box-sizing: border-box;
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  justify-content: space-between;
+}
+
+#about h4 {
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+#about h3 {
+  color: black;
+  font-size: 35px;
+}
+
+#about img {
+  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+}
+/* ------------------- */
+
+#contact {
+  width: 90%;
+  margin: auto;
+}
+
+#contact h3 {
+  font-size: 25px;
+  margin-top: 25px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.form-required {
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+}
+
+.required {
+  color: var(--purple);
+}
+
+#contact label {
+  display: flex;
+  font-size: 25px;
+  font-weight: 700;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+#contact legend {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+.custom-select select {
+  width: 100%;
+  padding: 10px;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 2px solid var(--purple);
+}
+
+.radio-label {
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.radio-input input {
+  display: none;
+}
+
+.radio-control {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  border: 4px solid var(--purple);
+}
+
+.radio-input input:checked + .radio-control::before {
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  content: "";
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--purple);
+  transform: translate(-50%, -50%);
+}
+
+.custom-select {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.custom-select select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  appearance: none;
+  box-sizing: border-box;
+  border: 2px solid var(--purple);
+}
+
+.custom-select .focus {
+  width: 0;
+  height: 0;
+  right: 10px;
+  position: absolute;
+  margin-right: 25px;
+  top: 45%;
+  pointer-events: none;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid var(--purple);
+}
+
+input[type="submit"] {
+  width: 100%;
+  border: none;
+  padding: 25px;
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: var(--white);
+  text-transform: uppercase;
+  background-color: var(--purple);
+}
+
+
+footer {
+  padding: 25px;
+  text-align: center;
+  background-color: var(--light-gray);
+  font-family: "Montserrat", sans-serif;
+}
+
+footer a {
+  display: flex;
+  padding-top: 5px;
+  color: var(--black);
+  align-items: center;
+  text-decoration: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 10px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  #logo {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  h1,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 45px;
+  }
+
+  p {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  nav {
+    margin-top: 25px;
+    grid-row: 3;
+    grid-column: 1 / 3;
+  }
+
+  #menu-toggle label {
+    display: none;
+  }
+
+  #menu-toggle ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+  }
+
+  #menu-toggle li {
+    margin: 0 10px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px 5px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--white);
+    font-family: "Montserrat", sans-serif;
+  }
+
+  #menu-toggle .active {
+    background-color: var(--yellow);
+  }
+
+  #intro {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  #intro h2 {
+    grid-row: 1;
+    text-align: left;
+    margin-left: 25px;
+    grid-column: 1 / 3;
+    margin-right: 25px;
+  }
+
+  #intro p {
+    grid-row: 2;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 25px;
+    grid-column: 1 / 3;
+  }
+
+  #img-grid {
+    grid-row: 3;
+    display: grid;
+    column-gap: 15px;
+    margin-left: 45px;
+    grid-column: 1 / 3;
+    margin-right: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+  }
+
+  #img-grid picture {
+    grid-row: 2;
+    grid-column: 1 / 3;
+    margin-bottom: 5px;
+  }
+
+  #img-grid img {
+    gap: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #plan {
+    padding: 25px;
+    text-align: center;
+    background-color: var(--yellow);
+  }
+
+  #plan h3 {
+    text-align: left;
+    margin-left: 5px;
+  }
+
+  #plan div {
+    gap: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #plan div section h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+
+  #plan div section {
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    width: 45%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: var(--teal);
+    border: 3px solid var(--white);
+    justify-content: space-between;
+  }
+
+  #plan div section a {
+    display: block;
+    text-align: center;
+  }
+
+  #testimonials {
+    padding: 25px;
+    text-align: center;
+  }
+
+  #plan div section img {
+    max-width: auto;
+    height: auto;
+  }
+
+  #testimonials h3 {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  #testimonials section {
+    width: 40%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--white);
+  }
+
+  #testimonials div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #about {
+    padding-left: 50px;
+    padding-right: 50px;
+    color: var(--white);
+    background-color: var(--blue);
+  }
+
+  #about div {
+    display: flex;
+    justify-content: center;
+  }
+
+  #about h3 {
+    text-align: left;
+  }
+
+  #about section {
+    text-align: center;
+    flex: 1;
+  }
+
+  #contact {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #about section img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px;
+  }
+
+  #contact fieldset {
+    gap: 45px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #contact h3 {
+    text-align: left;
+  }
+
+  #contact label {
+    display: flex;
+    align-items: center;
+  }
+
+  .form-required {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+  }
+
+  #nums label {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .required {
+    color: var(--purple);
+  }
+
+  #contact legend {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  input[type="email"],
+  input[type="text"],
+  input[type="tel"],
+  .custom-select select {
+    width: 100%;
+    display: block;
+    padding: 15px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border: 2px solid var(--purple);
+    box-sizing: border-box;
+  }
+
+  .radio-label {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: -20px;
+  }
+
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .radio-control {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    border-radius: 50%;
+    border: 4px solid var(--purple);
+    margin-bottom: 16px;
+  }
+
+  .custom-select {
+    width: 100%;
+    position: relative;
+  }
+
+  input[type="submit"] {
+    width: 50%;
+    border: none;
+    padding: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 50%;
+    margin-top: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: var(--white);
+    background-color: var(--purple);
+  }
+
+  footer {
+    font-family: "Montserrat", sans-serif;
+    gap: 25px;
+    text-align: center;
+    background-color: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer a {
+    color: var(--black);
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #logo {
+    grid-column: 1;
+    grid-row: 1 / 4;
+  }
+  header {
+    display: grid;
+    align-items: center;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 200px auto auto;
+  }
+
+  h1 {
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 25px;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  nav {
+    grid-row: 1;
+    grid-column: 3;
+    margin-top: -50px;
+    justify-self: end;
+    justify-self: end;
+  }
+
+  #menu-toggle li {
+    padding: 1px;
+  }
+
+  #intro h2 {
+    grid-row: 1;
+    grid-column: 1;
+    margin-top: -25px;
+    text-align: left;
+  }
+
+  #intro p {
+    grid-row: 2;
+    grid-column: 1;
+    text-align: left;
+  }
+
+  #intro {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  #img-grid {
+    display: grid;
+    grid-row: 1 / 4;
+    grid-column: 2;
+    column-gap: 25px;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #img-grid img {
+    gap: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #img-grid picture {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    margin-bottom: 10px;
+  }
+
+  #plan {
+    padding: 25px;
+    text-align: center;
+    background-color: var(--yellow);
+  }
+
+  #plan div {
+    gap: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 45px;
+  }
+
+  #plan h3 {
+    text-align: left;
+    margin-top: 45px;
+    margin-left: 45px;
+    margin-bottom: 25px;
+  }
+
+  #plan div section {
+    width: 300px;
+    height: 300px;
+    width: 40%;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: var(--teal);
+    border: 2px solid var(--white);
+  }
+
+  #plan div section h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+
+  #testimonials {
+    padding: 25px;
+    text-align: center;
+  }
+
+  #testimonials h3 {
+    text-align: left;
+    margin-top: 45px;
+    margin-left: 45px;
+    margin-bottom: 5px;
+  }
+
+  #testimonials div {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 45px;
+    margin-right: 45px;
+    justify-content: center;
+  }
+
+  #testimonials section {
+    width: 45%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    border: 1px solid var(--white);
+  }
+
+  #about {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: var(--white);
+    padding-bottom: 50px;
+    background-color: var(--blue);
+  }
+
+  #about h3 {
+    text-align: left;
+    font-size: 25px;
+  }
+
+  #about div {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+
+  #about section {
+    text-align: center;
+    flex: 1;
+  }
+
+  #about section img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  form #nums {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
+    grid-column: 2;
+    margin-right: 25px;
+  }
+
+  form #names {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
+    grid-column: 1;
+    margin-right: 25px;
+  }
+
+  #contact h3 {
+    margin-top: 60px;
+  }
+
+  input[type="submit"] {
+    width: 50%;
+    padding: 15px;
+    margin-bottom: 80px;
+  }
+
+  form #selects {
+    grid-row: 1;
+    grid-column: 3;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .custom-select .focus {
+    top: 30%;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: var(--black);
+    background-color: var(--light-gray);
+  }
+
+  footer p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: auto;
+  }
+
+  footer a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--black);
+    margin-right: 100px;
+    text-decoration: none;
+  }
+}
