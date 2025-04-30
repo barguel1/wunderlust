@@ -121,6 +121,8 @@ ul {
 /*Brittany Arguello*/
 
 
+@import url(https://fonts.google.com/share?selection.family=Molle:ital@1%7CMontserrat);
+
 :root{
     --yellow: #F6D64A;
     --teal: #55BCD5;
@@ -143,7 +145,6 @@ ul {
   overflow: hidden;
 }
 
-@import url(https://fonts.google.com/share?selection.family=Molle:ital@1%7CMontserrat);
 
 #skip {
   position: absolute;
@@ -336,8 +337,8 @@ img {
   justify-content: center;
   padding: 10px;
   grid-gap: 10px;
-  grid-template-columns: 1;
-  grid-template-rows: 2;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
 }
 
 #plan h3 {
@@ -599,6 +600,37 @@ footer a {
   flex-direction: column;
   justify-content: center;
 }
+@media screen and (max-width:767){
+    #plan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      #plan h3 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    
+      #plan div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+    
+      #plan div section {
+        width: 90%;
+        max-width: 300px;
+        text-align: center;
+      }
+    
+      #plan div section img {
+        margin: 0 auto;
+      }
+    } 
 
 
 @media screen and (min-width: 768px) {
@@ -760,8 +792,9 @@ footer a {
   }
 
   #plan div section img {
-    max-width: auto;
+    max-width: 100%;
     height: auto;
+    
   }
 
   #testimonials h3 {
